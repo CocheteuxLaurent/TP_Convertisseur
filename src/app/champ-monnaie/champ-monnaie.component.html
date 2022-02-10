@@ -1,4 +1,4 @@
-<select name="list" size="1" [value]="monnaieE" #selectionMonnaie>
+<select name="list" size="1" (change)="newMonnaieE(selectionMonnaie.value)" [value]="monnaieE" #selectionMonnaie>
     <option value="euros" selected="selected">€</option>
     <option value="dollar">$</option>
     <option value="livre">£</option>
